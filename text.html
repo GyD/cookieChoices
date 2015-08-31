@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        #cookieChoises {
+            position: absolute;
+            background-color: #5a5a5a;
+            z-index: 999;
+            width: 100%;
+            font-weight: bold;
+            margin: 0 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            font-size: 13px;
+            padding: 9px 15px;
+            line-height: 22px;
+            font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial;
+        }
+
+        #cookieChoises span {
+            padding-right: 15px;
+        }
+
+
+        #cookieChoises,
+        #cookieChoises a,
+        #cookieChoises a:hover,
+        #cookieChoises a:visited{
+            color: #FFFFFF;
+        }
+
+        #cookieChoises a,
+        #cookieChoises a:hover,
+        #cookieChoises a:visited {
+            background-color: #303030;
+            padding: 4px 8px;
+            cursor: pointer;
+            margin: 0 5px;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+
+<script type="text/javascript" src="dist/cookieChoices.js"></script>
+<script type="text/javascript">
+    (new cookieChoices())
+            .setMessage('Les cookies nous permettent de personnaliser le contenu et les annonces,' +
+            'd\'offrir des fonctionnalités relatives aux médias sociaux et d\'analyser notre trafic.' +
+            ' Nous partageons également des informations sur l\'utilisation de notre site avec nos partenaires de médias sociaux, de publicité et d\'analyse.')
+            .setCloseCopy('Accepter')
+            .setReadMore('En savoir Plus', 'http://www.google.com/intl/fr/policies/technologies/cookies/')
+            .setDenyCopy('Refuser')
+            .show();
+</script>
+</body>
+</html>
